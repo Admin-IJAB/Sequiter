@@ -1,0 +1,208 @@
+/* GLOABAL */
+body {
+    background-color: white;
+}
+
+.head-label {
+    background-color: bisque;
+}
+
+.head-label p {
+    padding: 20px;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+h3 {
+    margin-top:30px;
+    color:rgb(63, 63, 63);
+}
+
+span {
+    margin-right: 10px;
+}
+
+label {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#play {
+    color: rgb(51, 49, 49);
+    font-weight: 600;
+    background-color: rgb(213, 226, 226);
+    /* margin-top: 30px; */
+    border: 2px double rgba(80, 80, 80, 0.616);
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 50%;
+}
+
+
+.app-meat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* SEQUENCER */
+.sequencer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.seq-grid {
+    display: block;
+}
+
+.seq-row > input {
+    margin: 13px 11px;
+    transform: scale(2.7);
+    padding: 10px;
+    
+}
+.seq-row > input:nth-child(n+5) {
+    /* background-color: aqua; */
+    filter: sepia(50%) brightness(75%) hue-rotate(180deg) saturate(103%) contrast(137%);
+}
+
+
+
+
+/* MOOZIC CONTROLER */
+.controlr {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 50px;
+    margin: 30px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+#kitChoice p {
+    display: none;
+    background-color: blanchedalmond;
+}
+
+.drop-down-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    border-bottom: 3px solid white;
+}
+
+.drop-down-menu select, .drop-down-menu input {
+    width: 150px;
+    border:1px solid rgb(100, 100, 100);
+    border-radius: 2px;
+}
+
+.big-effects > input {
+    display: block;
+    width: 150px;
+    border:1px solid rgb(100, 100, 100);
+    border-radius: 2px;
+}
+
+
+
+.small-effects h4 {
+    margin-top: 30px;
+    font-style: italic;
+    color:rgb(63, 63, 63)
+}
+
+.drum-op {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    
+}
+
+.mel-op {
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+}
+
+.input-option > input {
+    width: 100px;
+    display:inline-block;
+    border:1px solid rgb(100, 100, 100);
+    border-radius: 2px;
+}
+
+.input-option > label {
+    font-size: .9rem;
+}
+
+.tbd-opt {
+    background-color: red;
+}
+
+
+/* INFO LOG */
+
+.log-vals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+
+#log {
+    margin-top: 30px;
+}
+
+.val {
+    display: flex;
+    font-family: monospace;
+    justify-content: space-between;
+    padding-top: 5px;
+    margin-right: 40px;
+    border-bottom: 1px black dashed;
+}
+
+
+.val span:nth-child(1) {
+    color: black;
+    font-size: .9rem;
+}
+
+.val span:nth-child(2) {
+    text-decoration: none;
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+/* @media only screen and (max-width: 768px) {
+    .input-option > input {
+        width: 95px;
+    }
+    h3 {
+        margin: 20px 0 10px 0;
+    }
+    .sequencer button {
+        margin-top: 20px;
+    }
+} */
